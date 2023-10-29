@@ -1,8 +1,8 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { createTheme } from '@mui/material/styles'; // Add this import
-
 import React from 'react';
-import Homepage from './pages/Homepage';
+import './app.css';
+import Homepage from './pages/Hompage';
 
 const darkTheme = createTheme({
 	palette: {
