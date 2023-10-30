@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <NavbarWrapper className="`navbar` +constant" >
             <Box sx={{ flexGrow: 1, background: 'black' }}>
-                <AppBar position='static' sx={{ background: '#222222', position: 'absolute', }}>
+                <AppBar >
                     <Toolbar>
                         <IconButton
                             size="large" App

@@ -16,7 +16,7 @@ const HeaderWrapper = styled(`div`)((props) => ({
 }));
 const NavbarWrapper = styled('div')(({ theme }) => ({
     ...theme.mixins.toolbar,
-    position: 'relative',
+    position: 'static',
     margin: 0,
     padding: 0,
     height: '20px',

@@ -7,7 +7,7 @@ export default function Homepage() {
     return (
         <>
             <Navbar />
-            <Routes />
+            {/* <Routes /> */}
             <h1>Homepage</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate dignissimos ducimus earum aspernatur, sit accusantium aliquam quibusdam porro quis placeat, ipsa eaque cum quidem rerum consequatur libero nemo non a, veritatis neque dolorum amet in. Esse eligendi rem vel voluptate necessitatibus voluptas fugiat eos ipsa, hic quasi labore error illo repellendus nobis ducimus velit? Commodi autem natus provident illum laborum molestias eius vitae facere minima! Inventore laboriosam cumque enim adipisci animi alias quam iusto minima fugit, repellendus commodi officia perferendis maiores, natus doloremque nesciunt eos consequuntur non deleniti assumenda beatae dolores! Autem ullam ab praesentium dignissimos. Voluptas, voluptatem minima.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate dignissimos ducimus earum aspernatur, sit accusantium aliquam quibusdam porro quis placeat, ipsa eaque cum quidem rerum consequatur libero nemo non a, veritatis neque dolorum amet in. Esse eligendi rem vel voluptate necessitatibus voluptas fugiat eos ipsa, hic quasi labore error illo repellendus nobis ducimus velit? Commodi autem natus provident illum laborum molestias eius vitae facere minima! Inventore laboriosam cumque enim adipisci animi alias quam iusto minima fugit, repellendus commodi officia perferendis maiores, natus doloremque nesciunt eos consequuntur non deleniti assumenda beatae dolores! Autem ullam ab praesentium dignissimos. Voluptas, voluptatem minima.</p>
