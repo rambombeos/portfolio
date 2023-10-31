@@ -1,3 +1,4 @@
+import { Tabs } from '@mui/material';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
@@ -11,8 +12,19 @@ const NavbarWrapper = styled('div')((theme) => ({
     margin: 0,
     padding: 0,
 }));
+const StyledTabs = styled(Tabs)((theme) => ({
+    // ...theme.mixins,
+    color: 'var(--primary-light)',
+    '& .Mui-selected': {
+        color: 'var(--primary) !important',
+    },
+    '& .MuiTabs-indicator': {
+        backgroundColor: 'var(--primary)',
+    },
+}));
 
 export {
+    StyledTabs,
     NavbarWrapper,
     HeaderWrapper,
 };

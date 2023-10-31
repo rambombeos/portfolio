@@ -1,9 +1,9 @@
 import { AppBar, Button, Grid, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { NavbarWrapper } from './style';
+import { NavbarWrapper, StyledTabs } from './style';
 
 export const Navbar = () => {
-    const [value, setValue] = useState();
+    const [value, setValue] = useState(0);
 
     return (
         <NavbarWrapper>
@@ -18,17 +18,16 @@ export const Navbar = () => {
                         </Grid>
                         <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', }}>
 
-                            <Tabs
-                                sx={{ color: 'var(--primary-light)' }}
+                            <StyledTabs
                                 value={value}
                                 onChange={(e, value) => setValue(value)}
-                                indicateColor='var(--primary)'
+                                indicateColor='secondary'
                             >
                                 <Tab label="Home" />
                                 <Tab label="About" />
                                 <Tab label="Portfolio" />
                                 <Tab label="Services" />
-                            </Tabs>
+                            </StyledTabs>
                         </Grid>
                         <Grid item xs={1} />
                         <Grid item xs={3} sx={{ display: 'flex', justifyContent: 'flex-end', }}>

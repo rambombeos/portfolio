@@ -14,11 +14,9 @@ function App() {
 
 	return (
 		<>
-			<ThemeProvider theme={darkTheme}> 
+			<ThemeProvider theme={darkTheme}>
 				<CssBaseline />
-				<div className="app">
-					<Homepage />
-				</div>
+				<Homepage />
 			</ThemeProvider>
 		</>
 	)
