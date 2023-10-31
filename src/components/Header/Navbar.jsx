@@ -1,7 +1,6 @@
-import { AppBar, Button, Grid, IconButton, Paper, Tab, Tabs, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Grid, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { NavbarWrapper } from './style';
-import designPicImage from '../../assets/img/design-pic.jpg';
 
 export const Navbar = () => {
     const [value, setValue] = useState();
