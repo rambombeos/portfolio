@@ -11,10 +11,10 @@ export const Navbar = () => {
                     <IconButton sx={{ width: '80px' }}>
                         <img src={designPicImage} alt="Design Pic" />
                     </IconButton>
-                    <Tabs textColor='inherit' >
+                    <Tabs textColor='inherit' sx={{color: 'var(--primary-light)'}}>
                         <Tab label="Home" />
                         <Tab label="About" />
-                        <Tab label="Portfolio" />
+                        <Tab label="Portfolio" />   
                         <Tab label="Services" />
                     </Tabs>
                     <Button variant='outlined' sx={{ marginLeft: 'auto' }}>Contact</Button>
