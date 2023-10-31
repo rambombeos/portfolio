@@ -10,8 +10,8 @@ const HeroWrapper = styled('div')(({ theme }) => ({
 const AboutWrapper = styled('div')(({ theme }) => ({
     outline: '1px solid red',
     // marginTop: '7vh',
-    minHeight: '95vh',
-    background: '#222',
+    minHeight: '85vh',
+    background: 'var(--section-bg)',
     padding: '0 100px',
     marginBottom:'50px',
 }));

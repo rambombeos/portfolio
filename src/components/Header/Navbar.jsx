@@ -13,7 +13,7 @@ export const Navbar = () => {
                         <Grid item xs={2}>
                             {/* <IconButton sx={{ width: '80px' }}> */}
                             {/* <img src={designPicImage} alt="Design Pic" /> */}
-                            <Typography variant='h4'>RambsDev</Typography>
+                            <Typography variant='h4' color={'primary'}>Rambs<span style={{color:'var(--secondary)'}}>Dev</span></Typography>
                             {/* </IconButton> */}
                         </Grid>
                         <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', }}>

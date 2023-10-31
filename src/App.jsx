@@ -7,8 +7,15 @@ import Homepage from './pages/Home/Homepage';
 const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
+		primary: {
+			main: '#00C9B7', // Your custom primary color
+		},
+		secondary: {
+			main: '#569D93', // Your custom secondary color
+		},
 	},
 });
+
 
 function App() {
 

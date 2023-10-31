@@ -15,12 +15,12 @@ const NavbarWrapper = styled('div')((theme) => ({
 const StyledTabs = styled(Tabs)((theme) => ({
     // ...theme.mixins,
     color: 'var(--primary-light)',
-    '& .Mui-selected': {
-        color: 'var(--primary) !important',
-    },
-    '& .MuiTabs-indicator': {
-        backgroundColor: 'var(--primary)',
-    },
+    // '& .Mui-selected': {
+    //     color: 'var(--primary) !important',
+    // },
+    // '& .MuiTabs-indicator': {
+    //     backgroundColor: 'var(--primary)',
+    // },
 }));
 
 export {
