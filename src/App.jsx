@@ -15,6 +15,17 @@ const darkTheme = createTheme({
 		},
 	},
 });
+const lightTheme = createTheme({
+	palette: {
+		mode: 'light',
+		primary: {
+			main: '#569D93', // Your custom primary color
+		},
+		secondary: {
+			main: '#569D93', // Your custom secondary color
+		},
+	},
+});
 
 
 function App() {

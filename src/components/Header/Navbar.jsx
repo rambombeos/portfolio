@@ -1,4 +1,4 @@
-import { AppBar, Button, Grid, Tab, Tabs, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Grid, Tab, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { NavbarWrapper, StyledTabs } from './style';
 
@@ -7,7 +7,7 @@ export const Navbar = () => {
 
     return (
         <NavbarWrapper>
-            <AppBar sx={{ background: '#222222', }}>
+            <AppBar >
                 <Toolbar>
                     <Grid container>
                         <Grid item xs={2}>

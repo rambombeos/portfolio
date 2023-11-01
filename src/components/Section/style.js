@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Typography } from '@mui/material';
+import { Paper, Typography } from '@mui/material';
 // const imagePath = '/assets/img/home-bg.png'; // The relative path to your image
 
 const HeroWrapper = styled('div')(({ theme }) => ({
@@ -9,21 +9,25 @@ const HeroWrapper = styled('div')(({ theme }) => ({
     minHeight: '100vh',
 }));
 
-const AboutWrapper = styled('div')(({ theme }) => ({
+const AboutWrapper = styled(Paper)(({ theme }) => ({
     minHeight: '90vh',
     background: 'var(--section-bg)',
     padding: '0 100px',
-    // marginBottom: '50px',
     [theme.breakpoints.down('sm')]: {
         padding: '0 20px', // Adjust padding for smaller screens
     },
 }));
 
-const PortfolioWrapper = styled('div')(({ theme }) => ({
+const PortfolioWrapper = styled(Paper)(({ theme }) => ({
     minHeight: '90vh',
-    background: 'var(--dark)',
-    padding: '0 100px',
-    // marginBottom: '50px',
+    padding: '0 100px 100px',
+    [theme.breakpoints.down('sm')]: {
+        padding: '0 20px', // Adjust padding for smaller screens
+    },
+}));
+const ServicesWrapper = styled(Paper)(({ theme }) => ({
+    minHeight: '90vh',
+    padding: '0 100px 100px',
     [theme.breakpoints.down('sm')]: {
         padding: '0 20px', // Adjust padding for smaller screens
     },
@@ -31,10 +35,8 @@ const PortfolioWrapper = styled('div')(({ theme }) => ({
 
 const TestWrapper = styled('div')(({ theme }) => ({
     minHeight: '90vh',
-    // background: 'var(--alternate-color)',
     background: 'var(--secondary)',
     padding: '50px 100px',
-    // marginBottom: '50px',
     [theme.breakpoints.down('sm')]: {
         padding: '0 20px', // Adjust padding for smaller screens
     },
@@ -55,16 +57,15 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     lineHeight: '1.7rem',
     [theme.breakpoints.down('sm')]: {
         ...theme.typography.body2,
-        textAlign:'center',
+        textAlign: 'center',
         fontSize: '1rem',
     },
 }));
 
 
 export {
-    TestWrapper,
     AboutWrapper,
     HeroWrapper,
-    ImageWrapper, PortfolioWrapper, StyledTypography
+    ImageWrapper, PortfolioWrapper, ServicesWrapper, StyledTypography, TestWrapper
 };
 

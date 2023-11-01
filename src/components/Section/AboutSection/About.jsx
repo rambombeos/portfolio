@@ -7,7 +7,7 @@ import designPcImage from '../../../assets/img/design-pic.jpg';
 
 export const About = () => {
     return (
-        <AboutWrapper>
+        <AboutWrapper >
             <Grid container>
                 <Grid item xs={12} sx={{ textAlign: 'center', }}>
                     <Typography color='primary' variant='h3' m={5}>ABOUT ME</Typography>
