@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import backgroundImage from '../../assets/img/home-bg.png';
 
 const HomepageWrapper = styled('div')((theme) => ({
-    // position: 'absolute', // Make the container absolute
     zIndex: -9999, // Set a lower z-index value
     top: 0,
     left: 0,
@@ -21,6 +20,6 @@ const PageWrapper = styled('div')((theme) => ({
 }));
 
 export {
-    PageWrapper,
-    HomepageWrapper
-}
+    HomepageWrapper, PageWrapper
+};
+
