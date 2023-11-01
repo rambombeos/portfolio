@@ -29,6 +29,17 @@ const PortfolioWrapper = styled('div')(({ theme }) => ({
     },
 }));
 
+const TestWrapper = styled('div')(({ theme }) => ({
+    minHeight: '90vh',
+    // background: 'var(--alternate-color)',
+    background: 'var(--secondary)',
+    padding: '50px 100px',
+    // marginBottom: '50px',
+    [theme.breakpoints.down('sm')]: {
+        padding: '0 20px', // Adjust padding for smaller screens
+    },
+}));
+
 const ImageWrapper = styled('div')(({ theme }) => ({
     // outline: '1px solid red',
     width: '100%',
@@ -51,6 +62,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 
 
 export {
+    TestWrapper,
     AboutWrapper,
     HeroWrapper,
     ImageWrapper, PortfolioWrapper, StyledTypography

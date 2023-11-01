@@ -10,7 +10,7 @@ export const About = () => {
         <AboutWrapper>
             <Grid container>
                 <Grid item xs={12} sx={{ textAlign: 'center', }}>
-                    <Typography variant='h3' m={5}>ABOUT ME</Typography>
+                    <Typography color='primary' variant='h3' m={5}>ABOUT ME</Typography>
                 </Grid>
                 <Grid item xs={12} md={5} p={1}>
                     <ImageWrapper>
