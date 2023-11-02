@@ -25,6 +25,14 @@ const PortfolioWrapper = styled(Paper)(({ theme }) => ({
         padding: '0 20px', // Adjust padding for smaller screens
     },
 }));
+const ContactWrapper = styled(Paper)(({ theme }) => ({
+    minHeight: '90vh',
+    background: 'var(--section-bg)',
+    padding: '10vw 10vw 100px',
+    [theme.breakpoints.down('sm')]: {
+        padding: '0 20px', // Adjust padding for smaller screens
+    },
+}));
 const ServicesWrapper = styled(Paper)(({ theme }) => ({
     minHeight: '90vh',
     padding: '0 100px 100px',
@@ -62,10 +70,8 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     },
 }));
 
-
 export {
-    AboutWrapper,
-    HeroWrapper,
+    AboutWrapper, ContactWrapper, HeroWrapper,
     ImageWrapper, PortfolioWrapper, ServicesWrapper, StyledTypography, TestWrapper
 };
 
