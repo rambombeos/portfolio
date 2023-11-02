@@ -4,8 +4,8 @@ import { Paper, Typography } from '@mui/material';
 
 const HeroWrapper = styled('div')(({ theme }) => ({
     // outline: '1px solid red',
-    marginTop: '7vh',
-    padding: '10px',
+    // marginTop: '7vh',
+    padding: '30vh 10vh 0 15vh',
     minHeight: '100vh',
 }));
 
@@ -20,7 +20,7 @@ const AboutWrapper = styled(Paper)(({ theme }) => ({
 
 const PortfolioWrapper = styled(Paper)(({ theme }) => ({
     minHeight: '90vh',
-    padding: '0 100px 100px',
+    padding: '0 10vw 100px',
     [theme.breakpoints.down('sm')]: {
         padding: '0 20px', // Adjust padding for smaller screens
     },

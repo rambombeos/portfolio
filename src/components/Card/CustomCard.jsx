@@ -1,28 +1,25 @@
-
-/** @jsxImportSource @emotion/react */
 import { Button, Card, CardContent, CardMedia, Collapse, Grid, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { CardWrapper, DrawerCardWrapper } from './style';
+import { CardWrapper, DrawerCardWrapper, InitialDrawerCardWrapper } from './style';
 
-export const randomDescription = ('Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto sapiente? Magni saepe, deserunt officiis adipisci et fugit sequi cupiditate.')
+export const randomDescription = ('Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto sapiente? Magni saepe, deserunt officiis adipisci et fugit sequi cupiditate.');
 
 export const CustomExpandableCard = (props) => {
-    const { 
-        image, 
-        title, 
-        link, 
-        codeLink, 
-        linkDisabled, 
-        codeLinkDisabled, 
+    const {
+        image,
+        title,
+        link,
+        codeLink,
+        linkDisabled,
+        codeLinkDisabled,
         websiteTitle,
         description,
-    } = props
+    } = props;
     const [expanded, setExpanded] = useState(true);
 
     const handleToggleExpand = () => {
         setExpanded(!expanded);
     };
-
 
     return (
         <CardWrapper>
@@ -31,8 +28,7 @@ export const CustomExpandableCard = (props) => {
                 onMouseLeave={handleToggleExpand}
             >
                 <Collapse in={expanded}>
-                    {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto sapiente? Magni saepe, deserunt officiis adipisci et fugit sequi cupiditate.</p> */}
-                    <DrawerCardWrapper elevation={5}>
+                    <InitialDrawerCardWrapper elevation={5}>
                         <CardMedia
                             backgroundSize='cover'
                             width={'100%'}
@@ -42,12 +38,12 @@ export const CustomExpandableCard = (props) => {
                             alt="website"
                         />
                         <CardContent>
-                            <Typography variant='h4' sx={{ textAlign: 'center', }}>{title}</Typography>
+                            <Typography variant='h4' color='secondary' sx={{ textAlign: 'center' }}>{title}</Typography>
                         </CardContent>
-                    </DrawerCardWrapper>
+                    </InitialDrawerCardWrapper>
                 </Collapse>
-                <Collapse in={!expanded} sx={{ background: '#333' }}>
-                    <DrawerCardWrapper  elevation={3}>
+                <Collapse in={!expanded} >
+                    <DrawerCardWrapper elevation={3} >
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
                                 {(websiteTitle ? websiteTitle : 'Project')}
@@ -56,11 +52,11 @@ export const CustomExpandableCard = (props) => {
                                 {(description ? description : randomDescription)}
                             </Typography>
                         </CardContent>
-                        <Grid container spacing={2} p={1}>
-                            <Grid item xs={6} display={'flex'} justifyContent={'center'}>
-                                <Button disabled={codeLinkDisabled} variant='outlined' fullWidth onClick={() => { window.open((codeLink ? link : 'https://rambsdev.netlify.app/'), '_blank') }}>Codes</Button>
+                        <Grid container spacing={2} justifyContent="space-between" p={1}>
+                            <Grid item xs={6}>
+                                <Button disabled={codeLinkDisabled} variant='outlined' fullWidth onClick={() => { window.open((codeLink ? codeLink : 'https://rambsdev.netlify.app/'), '_blank') }}>Codes</Button>
                             </Grid>
-                            <Grid item xs={6} display={'flex'} justifyContent={'center'}>
+                            <Grid item xs={6}>
                                 <Button disabled={linkDisabled} variant='contained' fullWidth onClick={() => { window.open((link ? link : 'https://rambsdev.netlify.app/'), '_blank') }}>Link</Button>
                             </Grid>
                         </Grid>
