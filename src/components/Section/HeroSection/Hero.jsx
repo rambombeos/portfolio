@@ -15,7 +15,7 @@ export const Hero =forwardRef((props, ref)=> {
     }, []);
 
     return (
-        <HeroWrapper>
+        <HeroWrapper  id='hero-section'>
             <Typography variant='h3' color='secondary'>
                 Hi! I am
             </Typography>

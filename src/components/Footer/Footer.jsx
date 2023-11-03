@@ -5,7 +5,7 @@ import { Button, Grid, Typography } from '@mui/material';
 import designPcImage from '../../assets/img/logo.svg';
 import { FooterWrapper } from './style';
 
-export const Footer = () => {
+export const Footer = ({ scrollToSection }) => {
     return (
         <FooterWrapper id='footer'>
             <Grid container >
@@ -15,10 +15,10 @@ export const Footer = () => {
                 <Grid container item xs={8} sx={{ padding: '20px 20px 0' }}>
                     <Grid item xs={3}>
                         <Typography variant='h5' color='var(--white-darker)'>Navigation</Typography>
-                        <Button color='secondary' sx={{ display: 'block' }}>Home</Button>
-                        <Button color='secondary' sx={{ display: 'block' }}>About</Button>
-                        <Button color='secondary' sx={{ display: 'block' }}>Portfolio</Button>
-                        <Button color='secondary' sx={{ display: 'block' }}>Services</Button>
+                        <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('hero-section', 0)}>Home</Button>
+                        <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('about-section', -50)}>About</Button>
+                        <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('portfolio-section', -50)}>Projects</Button>
+                        {/* <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('services-section', 0)}>Services</Button> */}
                     </Grid>
                     <Grid item xs={3}>
                         <Typography variant='h5' color='var(--white-darker)'>Social</Typography>

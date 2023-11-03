@@ -1,27 +1,34 @@
-import React, { useRef } from 'react'
-import { Footer } from '../../components/Footer/Footer'
-import { Header } from '../../components/Header/Header'
-import { About } from '../../components/Section/AboutSection/About'
-import { Contact } from '../../components/Section/ContactSection/Contact'
-import { Hero } from '../../components/Section/HeroSection/Hero'
-import { Portfolio } from '../../components/Section/Portfolio/Portfolio'
-import { HomepageWrapper } from './style'
+import React from 'react';
+import { scroller } from 'react-scroll';
+import { Footer } from '../../components/Footer/Footer';
+import { Navbar } from '../../components/Header/Navbar';
+import { About } from '../../components/Section/AboutSection/About';
+import { Contact } from '../../components/Section/ContactSection/Contact';
+import { Hero } from '../../components/Section/HeroSection/Hero';
+import { Portfolio } from '../../components/Section/Portfolio/Portfolio';
+import { HomepageWrapper } from './style';
 
 function Homepage() {
-    const heroRef = useRef(null);
-    const aboutRef = useRef(null);
-    const portfolioRef = useRef(null);
-    const contactRef = useRef(null);
+    const scrollToSection = (sectionId, offset = 0) => {
+        scroller.scrollTo(sectionId, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+            offset,
+        });
+    };
+
+
     return (
         <HomepageWrapper>
-            <Header />
-            <Hero ref={heroRef}/>
-            <About ref={aboutRef}/>
-            <Portfolio ref={portfolioRef}/>
+            <Navbar scrollToSection={scrollToSection}/>
+            <Hero />
+            <About />
+            <Portfolio />
             {/* <Services /> */}
-            <Contact ref={contactRef}/>
+            <Contact />
             {/* <Test /> */}
-            <Footer />
+            <Footer scrollToSection={scrollToSection}/>
         </HomepageWrapper>
     )
 }

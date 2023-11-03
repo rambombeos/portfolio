@@ -5,7 +5,7 @@ import { ContactWrapper } from '../style'
 
 export const Contact = () => {
     return (
-        <ContactWrapper >
+        <ContactWrapper  id='contact-section'>
             <Grid container >
                 <Grid item xs={6} sx={{ textAlign: 'left', padding: '0 30px'}}>
                     <Typography color='primary' variant='h3' >CONTACT</Typography>

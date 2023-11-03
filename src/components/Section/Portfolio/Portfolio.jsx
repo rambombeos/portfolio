@@ -14,10 +14,10 @@ export const Portfolio = () => {
 
 
     return (
-        <PortfolioWrapper elevation={1}>
+        <PortfolioWrapper elevation={1} id='portfolio-section'>
             <Grid container >
                 <Grid item xs={12} sx={{ textAlign: 'center', }}>
-                    <Typography color='primary' variant='h3' m={5}>PORTFOLIO</Typography>
+                    <Typography color='primary' variant='h3' m={5}>PROJECTS</Typography>
                 </Grid>
                 <Grid container spacing={4} xs={12}>
                     <Grid item xs={12} md={6} lg={4} >

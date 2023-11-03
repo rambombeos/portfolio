@@ -1,6 +1,6 @@
 import React from 'react'
-import { HeaderWrapper } from './style'
 import { Navbar } from './Navbar'
+import { HeaderWrapper } from './style'
 
 export const Header = () => {
     return (
