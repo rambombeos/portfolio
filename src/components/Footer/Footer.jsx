@@ -3,7 +3,7 @@ import React from 'react';
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material';
 import { Button, Grid, Typography } from '@mui/material';
 import designPcImage from '../../assets/img/logo.svg';
-import { FooterWrapper } from './style';
+import { FooterWrapper } from './Footer.style';
 
 export const Footer = ({ scrollToSection }) => {
     return (

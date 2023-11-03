@@ -5,6 +5,8 @@ import { NavbarWrapper, StyledTabs } from './style';
 export const Navbar = ({ scrollToSection }) => {
     const [value, setValue] = useState(0);
 
+    const [activeSection, setActiveSection] = useState(null);
+
     return (
         <NavbarWrapper>
             <AppBar >
@@ -27,7 +29,6 @@ export const Navbar = ({ scrollToSection }) => {
                                     } else if (value === 3) {
                                         scrollToSection('experience-section', -50);
                                     }
-
                                 }}
                                 indicateColor='secondary'
                             >
@@ -39,7 +40,7 @@ export const Navbar = ({ scrollToSection }) => {
                         </Grid>
                         <Grid item xs={1} />
                         <Grid item xs={3} sx={{ display: 'flex', justifyContent: 'flex-end', }}>
-                            <Button variant='outlined' sx={{ marginLeft: 'auto' }} onClick={() => scrollToSection('contact-section', -10)}>Contact</Button>
+                            <Button variant='outlined' sx={{ marginLeft: 'auto' }} onClick={() => scrollToSection('contact-section', -50)}>Contact</Button>
                         </Grid>
                     </Grid>
 
