@@ -2,8 +2,6 @@ import { Button, Card, CardContent, CardMedia, Collapse, Grid, Typography } from
 import React, { useState } from 'react';
 import { CardWrapper, DrawerCardWrapper, InitialDrawerCardWrapper } from './style';
 
-export const randomDescription = ('Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, architecto sapiente? Magni saepe, deserunt officiis adipisci et fugit sequi cupiditate.');
-
 export const CustomExpandableCard = (props) => {
     const {
         image,
@@ -30,7 +28,7 @@ export const CustomExpandableCard = (props) => {
                 <Collapse in={expanded}>
                     <InitialDrawerCardWrapper elevation={5}>
                         <CardMedia
-                            backgroundSize='cover'
+                            // backgroundSize='cover'
                             width={'100%'}
                             component="img"
                             height="194"

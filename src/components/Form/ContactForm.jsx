@@ -27,7 +27,7 @@ export const ContactForm = () => {
     };
 
     return (
-        <Paper maxWidth="sm" elevation={6} sx={{ padding: '30px' }}>
+        <Paper elevation={6} sx={{ padding: '30px' }}>
             <form onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
                     <Grid item xs={12}>

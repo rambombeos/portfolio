@@ -2,10 +2,20 @@ import React from 'react';
 // Import the image
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material';
 import { Button, Grid, Typography } from '@mui/material';
+import { useDispatch } from 'react-redux';
 import designPcImage from '../../assets/img/logo.svg';
+import { fetchTab } from '../../feature/slice/tab';
 import { FooterWrapper } from './Footer.style';
 
 export const Footer = ({ scrollToSection }) => {
+    const dispatch = useDispatch();
+
+    const handleHome = () => {
+        scrollToSection('hero-section', 0)
+        dispatch(fetchTab(0))
+    }
+
+
     return (
         <FooterWrapper id='footer'>
             <Grid container >
@@ -15,7 +25,7 @@ export const Footer = ({ scrollToSection }) => {
                 <Grid container item xs={8} sx={{ padding: '20px 20px 0' }}>
                     <Grid item xs={3}>
                         <Typography variant='h5' color='var(--white-darker)'>Navigation</Typography>
-                        <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('hero-section', 0)}>Home</Button>
+                        <Button color='secondary' sx={{ display: 'block' }} onClick={handleHome}>Home</Button>
                         <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('about-section', -50)}>About</Button>
                         <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('portfolio-section', -50)}>Projects</Button>
                         {/* <Button color='secondary' sx={{ display: 'block' }} onClick={() => scrollToSection('services-section', 0)}>Services</Button> */}

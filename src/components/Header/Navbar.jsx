@@ -1,11 +1,17 @@
 import { AppBar, Button, Grid, Tab, Toolbar, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavbarWrapper, StyledTabs } from './style';
 
 export const Navbar = ({ scrollToSection }) => {
+    const dispatch = useDispatch()
     const [value, setValue] = useState(0);
+    const tabData = useSelector((state) => state.tab.data);
 
-    const [activeSection, setActiveSection] = useState(null);
+    useEffect(() => {
+        // dispatch(fetchTab(0))
+        setValue(tabData.value)
+    }, [tabData]);
 
     return (
         <NavbarWrapper>
@@ -30,7 +36,7 @@ export const Navbar = ({ scrollToSection }) => {
                                         scrollToSection('experience-section', -50);
                                     }
                                 }}
-                                indicateColor='secondary'
+                            // indicateColor='secondary'
                             >
                                 <Tab label="Home" />
                                 <Tab label="About" />

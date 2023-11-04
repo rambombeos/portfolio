@@ -19,7 +19,7 @@ export const Portfolio = () => {
                 <Grid item xs={12} sx={{ textAlign: 'center', }}>
                     <Typography color='primary' variant='h3' m={5}>PROJECTS</Typography>
                 </Grid>
-                <Grid container spacing={4} xs={12}>
+                <Grid item container spacing={4} xs={12}>
                     <Grid item xs={12} md={6} lg={4} >
                         <CustomExpandableCard
                             image={complead_img}
