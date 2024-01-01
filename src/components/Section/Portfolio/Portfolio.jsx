@@ -49,7 +49,7 @@ export const Portfolio = () => {
                             websiteTitle={secondCard.projectName}
                             description={secondCard.description}
                             codeLinkDisabled={true} 
-                            linkDisabled={true}/>
+                            /* linkDisabled={true} *//>
                     </Grid>
 
                 </Grid>

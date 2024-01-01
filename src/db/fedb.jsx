@@ -11,7 +11,7 @@ const CardsData = [
     {
         id: 2,
         title: "Client Website",
-        link: "http://www.miltonstark.com/",
+        link: "https://www.miltonstark.com/",
         projectName: "Energy Consulting Website",
         language: ["HTML/CSS"],
         description: "I've skillfully crafted a professional website for a energy consulting company using Squarespace as the foundation and fine-tuned it with HTML and CSS. I utilized design tools like Canva, Figma, and Photoshop while managing the code with Visual Studio Code to create a visually appealing and informative online presence.",
