@@ -1,7 +1,7 @@
 import React from 'react';
 // Import the image
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material';
-import { Button, Grid, Typography } from '@mui/material';
+import { Box, Button, Divider, Grid, Typography } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import designPcImage from '../../assets/img/logo.svg';
 import { fetchTab } from '../../feature/slice/tab';
@@ -49,11 +49,14 @@ export const Footer = ({ scrollToSection }) => {
                         <Typography color='secondary'>Address: <span style={{ color: 'var(--white-darker)', fontSize: '.9rem' }}>Misamis Oriental, Philippines</span></Typography>
                         <Typography color='secondary'>Email: <span style={{ color: 'var(--white-darker)', fontSize: '.9rem' }}>rambombeos@gmail.com</span></Typography>
                         <Typography color='secondary'>Phone: <span style={{ color: 'var(--white-darker)', fontSize: '.9rem' }}>(088) 557-0069</span></Typography>
-
                     </Grid>
-
                 </Grid>
+
             </Grid>
+            <Divider variant='middle' />
+            <Box item xs={12} sx={{ textAlign: 'center', padding: '1rem' }}>
+                <Typography color='secondary'> © 2023 | RambsDev</Typography>
+            </Box>
         </FooterWrapper>
     )
 }
